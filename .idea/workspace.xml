@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand />
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f96ca1b-ec35-4ff4-a290-2ffe1fbf53d2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-    </list>
+    <list default="true" id="5f96ca1b-ec35-4ff4-a290-2ffe1fbf53d2" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -38,6 +40,14 @@
     <configuration />
   </component>
   <component name="TaskManager">
+    <task id="LOCAL-00001" summary="0.0.1">
+      <created>1595256409617</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1595256409617</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -52,10 +62,22 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="0.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="0.0.1" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="733" y="296" key="CommitChangelistDialog2" timestamp="1595256296271">
+    <state x="733" y="296" key="CommitChangelistDialog2" timestamp="1595256408925">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="733" y="296" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595256296271" />
+    <state x="733" y="296" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595256408925" />
+    <state x="886" y="411" key="RollbackChangesDialog" timestamp="1595256371327">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="886" y="411" key="RollbackChangesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595256371327" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1595256411123">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595256411123" />
   </component>
 </project>

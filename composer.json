@@ -1,4 +1,7 @@
 {
+	"name":"mikeel/mydealz_phpparserbot",
+	"description": "MyDealz PHP Bot",
+	"version": "0.0.1",
 	"require": {
 		"guzzlehttp/oauth-subscriber": "0.4.*",
 		"ext-json": "*"
