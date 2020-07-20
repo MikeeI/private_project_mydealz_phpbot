@@ -1,0 +1,11 @@
+{
+	"require": {
+		"guzzlehttp/oauth-subscriber": "0.4.*",
+		"ext-json": "*"
+	},
+	"autoload": {
+		"classmap": [
+			"controller/"
+		]
+	}
+}
