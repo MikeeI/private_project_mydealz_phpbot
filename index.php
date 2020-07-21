@@ -3,10 +3,6 @@ require_once __DIR__ . '/vendor/autoload.php';
 require_once 'controller/controller_api_interaction.php';
 require_once 'controller/controller_data.php';
 
-use GuzzleHttp\HandlerStack;
-use GuzzleHttp\Subscriber\Oauth\Oauth1;
-use GuzzleHttp\Client;
-use GuzzleHttp\ClientInterface;
 
 
 ini_set('display_errors', 1);
@@ -36,21 +32,25 @@ $json = get_threads_by_merchant(3);
 
 
 echo '<table>';
-echo '<thead><tr><th>title</td><td>price</td><td>number</td></tr></thead>';
+echo '<tr><th>Time</th><th>ID</th><th>Preis</th><th>Image</th><th>Rabatt</th><th>Name</th></tr>';
 foreach ($json->data as $thread) {
 	echo '<tr>';
 	echo '<td>' . secToHR($date->getTimestamp() - $thread->submitted) . "</td>";
 	echo '<td>' . $thread->thread_id . '</td>';
 	echo '<td>' . $thread->price . '</td>';
+
+	$asin = get_ASIN_from_URL("https://mydealz.de/visit/thread/" . $thread->thread_id);
+
+
+	echo '<td>' . '<img width="250px" alt="" src="' . get_image_price_graph($asin) . '">' . '</td>';
+
 	if (isset($thread->price_discount)) {
-		echo '<td>' . $thread->price_discount . '</td>';
+		echo '<td>' . $thread->price_discount . '%</td>';
 	} else {
 		echo '<td>' . "" . '</td>';
-
 	}
 
 	echo '<td>' . $thread->title . '</td>';
-
 	echo '</tr>';
 }
 echo '</table>';

@@ -89,7 +89,7 @@
       <paths name="Hetzner-Webserver-AX51-64GB">
         <serverdata>
           <mappings>
-            <mapping local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/var/www/data-geschmeidig-es/projects/mydealz_phpparserbot" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>

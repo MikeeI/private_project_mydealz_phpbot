@@ -5,13 +5,27 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f96ca1b-ec35-4ff4-a290-2ffe1fbf53d2" name="Default Changelist" comment="" />
+    <list default="true" id="5f96ca1b-ec35-4ff4-a290-2ffe1fbf53d2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/controller/controller_messaging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/controller_api_interaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller_api_interaction.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/controller_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller_data.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings">
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="909976c0-a8ba-4663-9c53-f1bc5a41fc8d" />
     </execution>
@@ -30,11 +44,24 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/Http/Resources" />
+      <path value="$PROJECT_DIR$/vendor/eleirbag89/telegrambotphp" />
     </include_path>
   </component>
+  <component name="ProjectId" id="1exZdEH3PUYrLbkuKcUFS8mDOO3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
   <component name="RunManager">
     <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
       <method v="2" />
     </configuration>
   </component>
@@ -56,8 +83,26 @@
       <option name="project" value="LOCAL" />
       <updated>1595256900589</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="composer.json update">
+      <created>1595257056002</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1595257056002</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f96ca1b-ec35-4ff4-a290-2ffe1fbf53d2" name="Default Changelist" comment="" />
+      <created>1595265289920</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1595265289920</updated>
+      <workItem from="1595265295307" duration="10208000" />
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -76,24 +121,41 @@
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="0.0.1" />
     <MESSAGE value="composer.json fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="composer.json fix" />
+    <MESSAGE value="composer.json update" />
+    <option name="LAST_COMMIT_MESSAGE" value="composer.json update" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="733" y="296" key="CommitChangelistDialog2" timestamp="1595256900057">
+    <state x="872" y="358" key="#Deployment" timestamp="1595265617576">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="733" y="296" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595256900057" />
+    <state x="872" y="358" key="#Deployment/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595265617576" />
+    <state x="733" y="296" key="CommitChangelistDialog2" timestamp="1595257055408">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="733" y="296" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595257055408" />
     <state x="1058" y="581" width="444" height="266" key="ComposerInitDialogKey" timestamp="1595257012728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1058" y="581" width="444" height="266" key="ComposerInitDialogKey/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595257012728" />
+    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1595270477794">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1114" y="623" key="NewPhpFileDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595270477794" />
     <state x="886" y="411" key="RollbackChangesDialog" timestamp="1595256371327">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="886" y="411" key="RollbackChangesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595256371327" />
-    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1595256901493">
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1595257057106">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="432" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595256901493" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595257057106" />
+    <state x="1165" y="430" key="ftp.server.browser" timestamp="1595265613071">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1165" y="430" key="ftp.server.browser/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595265613071" />
+    <state x="875" y="488" key="git4idea.merge.GitPullDialog" timestamp="1595257291096">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="875" y="488" key="git4idea.merge.GitPullDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595257291096" />
   </component>
 </project>

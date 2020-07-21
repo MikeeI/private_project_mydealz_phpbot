@@ -4,7 +4,9 @@
 	"version": "0.0.1",
 	"require": {
 		"guzzlehttp/oauth-subscriber": "0.4.*",
-		"ext-json": "*"
+		"ext-json": "*",
+		"ext-curl": "*",
+		"eleirbag89/telegrambotphp": "*"
 	},
 	"autoload": {
 		"classmap": [
