@@ -1,7 +1,13 @@
 <?php
-require_once __DIR__ . '/vendor/autoload.php';
+
+require_once 'controller/controller_config.php';
 require_once 'controller/controller_api_interaction.php';
 require_once 'controller/controller_data.php';
+require_once 'library/lib_timetracker.php';
+require_once __DIR__ . '/vendor/autoload.php';
+
+
+$timer = new timetracker("start"); // Example Description
 
 
 
@@ -34,23 +40,21 @@ $json = get_threads_by_merchant(3);
 echo '<table>';
 echo '<tr><th>Time</th><th>ID</th><th>Preis</th><th>Image</th><th>Rabatt</th><th>Name</th></tr>';
 foreach ($json->data as $thread) {
+	$asin = get_ASIN_from_URL("https://mydealz.de/visit/thread/" . $thread->thread_id);
+
 	echo '<tr>';
 	echo '<td>' . secToHR($date->getTimestamp() - $thread->submitted) . "</td>";
 	echo '<td>' . $thread->thread_id . '</td>';
 	echo '<td>' . $thread->price . '</td>';
-
-	$asin = get_ASIN_from_URL("https://mydealz.de/visit/thread/" . $thread->thread_id);
-
-
-	echo '<td>' . '<img width="250px" alt="" src="' . get_image_price_graph($asin) . '">' . '</td>';
-
+	echo '<td>' . '<img style="width: 250px; max-height: 100px" alt="" src="' . get_image_price_graph($asin) . '">' . '</td>';
 	if (isset($thread->price_discount)) {
 		echo '<td>' . $thread->price_discount . '%</td>';
 	} else {
 		echo '<td>' . "" . '</td>';
 	}
-
 	echo '<td>' . $thread->title . '</td>';
 	echo '</tr>';
 }
 echo '</table>';
+
+//$timer->htmlOut();
