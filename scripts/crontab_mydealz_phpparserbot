@@ -1,0 +1,5 @@
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+#MyDealz | Send Telegram Notifications | Every Minute
+* * * * * root curl -sS http://data.geschmeidig.es/projects/mydealz_phpparserbot/update_telegram_notifications.php >/dev/null 2>&1

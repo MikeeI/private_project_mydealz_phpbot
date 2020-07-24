@@ -10,9 +10,6 @@ use GuzzleHttp\ClientInterface;
 
 function get_ASIN_from_URL($url)
 {
-	global $timer;
-	$timer->add("CURLINFO_EFFECTIVE_URL_begin");
-
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url);
 	curl_setopt($ch, CURLOPT_HEADER, true);
@@ -29,8 +26,6 @@ function get_ASIN_from_URL($url)
 	$url_amazon = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
 	curl_close($ch);
 
-	$timer->add("CURLINFO_EFFECTIVE_URL_end");
-
 	preg_match('/(?:dp|o|gp|-|dp\/product|gp\/product)\/(B[0-9]{2}[0-9A-Z]{7}|[0-9]{9}(?:X|[0-9]))/', $url_amazon, $asin_arr);
 
 	if (isset($asin_arr[1])) {
@@ -45,19 +40,25 @@ function get_image_price_graph($ASIN, $domain = "de")
 	if ($ASIN != null) {
 		$url = "https://graph.keepa.com/pricehistory.png?domain=" . $domain . "&asin=" . $ASIN;
 	} else {
-		$url = "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==";
+		$url = "";
 	}
 
 	return $url;
 }
 
-function get_threads_by_merchant($merchant_id, $filter = null)
+function get_threads_by_merchant($merchant_id, $limit = 50, $filter = null)
 {
 	$base_url = "https://www.mydealz.de/rest_api/v2/thread?order_by=new";
-	$api_url = $base_url . "&include_deleted=true&include_moderated=true&include_scheduled=true&expired=true&local=false&type_id=1&merchant_id=" . $merchant_id . "&limit=20";
+	$api_url = $base_url . "&include_deleted=true&include_moderated=true&include_scheduled=true&expired=true&local=false&type_id=1&merchant_id=" . $merchant_id . "&limit=" . $limit;
 	$response_json = send_mydealz_api_request($api_url);
 
 	return $response_json;
+}
+
+
+function modify_threads_by_filter($threads)
+{
+
 }
 
 function send_mydealz_api_request($api_url)
@@ -83,10 +84,13 @@ function send_mydealz_api_request($api_url)
 		$response = $client->get($api_url, array('auth' => 'oauth'));
 		$json_string = $response->getBody()->getContents();
 		$json = json_decode($json_string);
+
+
 		return $json;
 
 	} catch (\GuzzleHttp\Exception\GuzzleException $e) {
 		echo $e->getMessage();
+
 		return null;
 	}
 

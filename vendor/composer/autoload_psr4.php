@@ -8,6 +8,7 @@ $baseDir = dirname($vendorDir);
 return array(
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-message/src'),
     'Psr\\Http\\Client\\' => array($vendorDir . '/psr/http-client/src'),
+    'Intervention\\Image\\' => array($vendorDir . '/intervention/image/src/Intervention/Image'),
     'GuzzleHttp\\Subscriber\\Oauth\\' => array($vendorDir . '/guzzlehttp/oauth-subscriber/src'),
     'GuzzleHttp\\Psr7\\' => array($vendorDir . '/guzzlehttp/psr7/src'),
     'GuzzleHttp\\Promise\\' => array($vendorDir . '/guzzlehttp/promises/src'),

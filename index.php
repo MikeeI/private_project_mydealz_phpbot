@@ -32,7 +32,7 @@ function secToHR($seconds)
 $date = new DateTime();
 
 
-$json = get_threads_by_merchant(3);
+$json = get_threads_by_merchant(3, 5);
 
 //var_dump($json->data);
 
@@ -43,6 +43,7 @@ foreach ($json->data as $thread) {
 	$asin = get_ASIN_from_URL("https://mydealz.de/visit/thread/" . $thread->thread_id);
 
 	echo '<tr>';
+	echo '<td>' . $thread->group_display_summary.'</td>';
 	echo '<td>' . secToHR($date->getTimestamp() - $thread->submitted) . "</td>";
 	echo '<td>' . $thread->thread_id . '</td>';
 	echo '<td>' . $thread->price . '</td>';
