@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" showNewOnSourceInSync="false">
     <serverData>
       <paths name="DO-VNC-Server-Dev1">
         <serverdata>
@@ -122,6 +122,13 @@
         </serverdata>
       </paths>
       <paths name="iPad Air2">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="ubuntu-16gb-nbg1-1">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

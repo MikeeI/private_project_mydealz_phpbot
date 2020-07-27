@@ -63,19 +63,29 @@ function create_Notification_element($thread, $graph_url = null)
 		$string_data = file_get_contents($filename);
 		$array_notifications_read = unserialize($string_data);
 
-		//highlight_string("" . var_export($array_notifications_read, true));
+		highlight_string("" . var_export($array_notifications_read, true));
 
-		if (array_key_exists($thread_id, $array_notifications_read) && ($array_notifications_read[$thread_id] == "1")) {
-			$send_notification = false;
-		} else {
+		if (is_bool($array_notifications_read) == true) {
 			$send_notification = true;
+
+		} else {
+			if (array_key_exists($thread_id, $array_notifications_read) && ($array_notifications_read[$thread_id] == "1")) {
+				$send_notification = false;
+			} else {
+				$send_notification = true;
+			}
 		}
+
 	} else {
 		$send_notification = true;
 	}
 
+	if (is_bool($array_notifications_read) == true) {
+		$array_notifications = $array_notification_new;
+	} else {
+		$array_notifications = $array_notifications_read + $array_notification_new;
 
-	$array_notifications = $array_notifications_read + $array_notification_new;
+	}
 	$string_data = serialize($array_notifications);
 	file_put_contents($filename, $string_data);
 

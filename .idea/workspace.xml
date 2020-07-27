@@ -6,25 +6,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5f96ca1b-ec35-4ff4-a290-2ffe1fbf53d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controller/controller_messaging.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mydealz_phpparserbot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mydealz_phpparserbot.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controller_api_interaction.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller_api_interaction.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/controller_data.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller_data.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_files.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_files.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/autoload_static.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/controller_messaging.php" beforeDir="false" afterPath="$PROJECT_DIR$/controller/controller_messaging.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/update_telegram_notifications.php" beforeDir="false" afterPath="$PROJECT_DIR$/update_telegram_notifications.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution>
       <phar pharPath="$PROJECT_DIR$/composer.phar" interpreterId="909976c0-a8ba-4663-9c53-f1bc5a41fc8d" />
@@ -45,6 +40,7 @@
       <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/vendor/Http/Resources" />
       <path value="$PROJECT_DIR$/vendor/eleirbag89/telegrambotphp" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1exZdEH3PUYrLbkuKcUFS8mDOO3" />
@@ -54,16 +50,18 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/build" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager">
-    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
-      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
-      <method v="2" />
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\micro\Dropbox\Workspace\Webspace Workspace\hetzweb1\data-geschmeidig-es\mydealz_phpparserbot\build" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -96,9 +94,31 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1595265289920</updated>
-      <workItem from="1595265295307" duration="10208000" />
+      <workItem from="1595265295307" duration="31190000" />
+      <workItem from="1595596114374" duration="13556000" />
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="ASIN Parser&#10;Keepa Graph">
+      <created>1595332813663</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1595332813663</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Curl Optimization&#10;TimeTracker Lib">
+      <created>1595336193403</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1595336193403</updated>
+    </task>
+    <task id="LOCAL-00006" summary="CRON&#10;Telegram Message with Custom Image">
+      <created>1595596815834</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1595596815834</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,33 +142,62 @@
     <MESSAGE value="0.0.1" />
     <MESSAGE value="composer.json fix" />
     <MESSAGE value="composer.json update" />
-    <option name="LAST_COMMIT_MESSAGE" value="composer.json update" />
+    <MESSAGE value="ASIN Parser&#10;Keepa Graph" />
+    <MESSAGE value="Curl Optimization&#10;TimeTracker Lib" />
+    <MESSAGE value="CRON&#10;Telegram Message with Custom Image" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRON&#10;Telegram Message with Custom Image" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="872" y="358" key="#Deployment" timestamp="1595265617576">
+    <state x="872" y="358" key="#Deployment" timestamp="1595852949057">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="358" key="#Deployment/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595265617576" />
-    <state x="733" y="296" key="CommitChangelistDialog2" timestamp="1595257055408">
+    <state x="872" y="358" key="#Deployment/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595852949057" />
+    <state x="856" y="345" key="#SSH_Configurations" timestamp="1595852944737">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="733" y="296" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595257055408" />
+    <state x="856" y="345" key="#SSH_Configurations/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595852944737" />
+    <state x="982" y="501" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1595428022628">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="982" y="501" key="#com.intellij.fileTypes.FileTypeChooser/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595428022628" />
+    <state x="321" y="398" key="CommitChangelistDialog2" timestamp="1595596814847">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="321" y="398" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1595596814847" />
+    <state x="733" y="296" key="CommitChangelistDialog2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595336192908" />
     <state x="1058" y="581" width="444" height="266" key="ComposerInitDialogKey" timestamp="1595257012728">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1058" y="581" width="444" height="266" key="ComposerInitDialogKey/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595257012728" />
-    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1595270477794">
+    <state x="92" y="92" width="2376" height="1216" key="DirDiffDialog" timestamp="1595420640821">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="1114" y="623" key="NewPhpFileDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595270477794" />
+    <state x="92" y="92" width="2376" height="1216" key="DirDiffDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595420640821" />
+    <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1595606082235">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1060" y="455" key="FileChooserDialogImpl/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595606082235" />
+    <state x="1114" y="623" key="NewPhpFileDialog" timestamp="1595337054784">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1114" y="623" key="NewPhpFileDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595337054784" />
     <state x="886" y="411" key="RollbackChangesDialog" timestamp="1595256371327">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="886" y="411" key="RollbackChangesDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595256371327" />
-    <state x="872" y="432" key="Vcs.Push.Dialog.v2" timestamp="1595257057106">
+    <state x="-1688" y="432" key="Vcs.Push.Dialog.v2" timestamp="1595596817644">
+      <screen x="-2560" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-1688" y="432" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@-2560.0.2560.1400" timestamp="1595596817644" />
+    <state x="872" y="432" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595336194842" />
+    <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1595423802267">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="432" key="Vcs.Push.Dialog.v2/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595257057106" />
+    <state x="92" y="92" width="2376" height="1216" key="com.intellij.history.integration.ui.views.FileHistoryDialog/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595423802267" />
+    <state x="986" y="433" width="834" height="534" key="find.popup" timestamp="1595425367262">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="986" y="433" width="834" height="534" key="find.popup/-2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1595425367262" />
     <state x="1165" y="430" key="ftp.server.browser" timestamp="1595265613071">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
