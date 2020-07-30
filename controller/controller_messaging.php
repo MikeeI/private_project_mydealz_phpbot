@@ -30,12 +30,12 @@ function send_Telegram_Message($chat_id, $message)
 function create_Telegram_Deal_Message($thread, $graph_url = "")
 {
 	$title = $thread->title;
-	$tread_id = $thread->thread_id;
+	$thread_id = $thread->thread_id;
 	$price = $thread->price;
 	$price_discount = $thread->price_discount;
 	$temperature_rating = $thread->temperature_rating;
 
-	$mydealz_link_redirect = 'https://www.mydealz.de/visit/thread/' . $tread_id;
+	$mydealz_link_redirect = 'https://www.mydealz.de/visit/thread/' . $thread_id;
 
 	$message_string = '• DEAL: ' . "<b>" . $title . '</b>' . PHP_EOL;
 	$message_string = $message_string . '• Preis: ' . "<b>" . $price . "€</b>" . PHP_EOL;
@@ -54,7 +54,8 @@ function create_Telegram_Deal_Message($thread, $graph_url = "")
 function create_Notification_element($thread, $graph_url = null)
 {
 	$filename = "data/notifications/notification_array_debug.file";
-	$thread_id = "de_" . $thread->thread_id;
+	$tld = get_tld_from_url('https://www.mydealz.de/visit/thread/' . $thread->thread_id);
+	$thread_id = $tld ."_". $thread->thread_id;
 
 	$array_notification_new = array($thread_id => '1');
 	$array_notifications_read = [];
@@ -114,7 +115,9 @@ function create_Notification_image($thread = null, $graph_url = null)
 		$draw->color('#0088CC');
 	});
 
-	$path = folder_notification_images . 'de_' . $thread->thread_id . '.png';
+	$tld = get_tld_from_url('https://www.mydealz.de/visit/thread/' . $thread->thread_id);
+
+	$path = folder_notification_images . $tld . $thread->thread_id . '.png';
 	$url_base = 'http://data.geschmeidig.es/projects/mydealz_phpparserbot/';
 	$img_canvas->insert($img_canvas_mydealz, 'bottom-center'); // add offset
 	$img_canvas->save($path, 100);

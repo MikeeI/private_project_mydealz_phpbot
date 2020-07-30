@@ -56,6 +56,24 @@
       ),
       'reference' => '239400de7a173fe9901b9ac7c06497751f00727a',
     ),
+    'intervention/image' => 
+    array (
+      'pretty_version' => '2.5.1',
+      'version' => '2.5.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'abbf18d5ab8367f96b3205ca3c89fb2fa598c69e',
+    ),
+    'jeremykendall/php-domain-parser' => 
+    array (
+      'pretty_version' => '1.4.2',
+      'version' => '1.4.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'add2b07755ab1d2543a383bd78fbe031c6377f9a',
+    ),
     'mikeel/mydealz_phpparserbot' => 
     array (
       'pretty_version' => '0.0.1',

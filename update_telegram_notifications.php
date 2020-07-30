@@ -11,7 +11,30 @@ require_once __DIR__ . '/vendor/autoload.php';
 $json = get_threads_by_merchant(3, 50);
 
 foreach ($json->data as $thread) {
-	if ($thread->group_display_summary === "Lebensmittel & Haushalt") {
+	if ($thread->group_display_summary === "Kultur & Freizeit") {
+		continue;
+	}
+
+	if (isset($thread->price_discount) && isset($thread->price)) {
+		echo $thread->thread_id . " - " . $thread->price_discount . " - " . $thread->price."€<br>";
+
+		if (($thread->price_discount > 90) && ($thread->price > 0.1)) {
+			send_notification($thread);
+			echo "SEND<br><br>";
+			continue;
+		}
+
+		if (($thread->price_discount > 50) && ($thread->price > 3)) {
+			send_notification($thread);
+    		echo "SEND<br><br>";
+			continue;
+		}
+	}
+}
+$json = get_threads_by_merchant(385, 50);
+
+foreach ($json->data as $thread) {
+	if ($thread->group_display_summary === "Kultur & Freizeit") {
 		continue;
 	}
 
@@ -27,19 +50,17 @@ foreach ($json->data as $thread) {
 		if (($thread->price_discount > 50) && ($thread->price > 3)) {
 			send_notification($thread);
 			echo "SEND<br><br>";
-
 			continue;
 		}
 	}
-
-
 }
 
 function send_notification($thread)
 {
 	$url_deal = 'https://www.mydealz.de/visit/thread/' . $thread->thread_id;
 	$asin = get_ASIN_from_URL($url_deal);
-	$url_graph = get_image_price_graph($asin);
+
+	$url_graph = get_image_price_graph($asin,$url_deal);
 
 
 	if (create_Notification_element($thread)) {

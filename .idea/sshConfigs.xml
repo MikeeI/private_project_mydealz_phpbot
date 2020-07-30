@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig host="168.119.51.111" id="1bba83e6-c338-4be6-8f7a-2d65af9d34ae" keyPath="C:\Users\micro\.ssh\id_rsa" port="22" customName="ubuntu-16gb-nbg1-1" nameFormat="CUSTOM" username="root" />
+      <sshConfig host="95.217.239.241" id="1bba83e6-c338-4be6-8f7a-2d65af9d34ae" keyPath="C:\Users\micro\.ssh\id_rsa" port="22" customName="ubuntu-16gb-nbg1-1" nameFormat="CUSTOM" username="root" />
     </configs>
   </component>
 </project>

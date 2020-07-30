@@ -6,9 +6,11 @@ use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Subscriber\Oauth\Oauth1;
 use GuzzleHttp\Client;
 use GuzzleHttp\ClientInterface;
+use Pdp\Domain;
+use Pdp\PublicSuffix;
+use Pdp\Rules;
 
-
-function get_ASIN_from_URL($url)
+function get_final_URL_from_URL($url)
 {
 	$ch = curl_init();
 	curl_setopt($ch, CURLOPT_URL, $url);
@@ -23,8 +25,15 @@ function get_ASIN_from_URL($url)
 	curl_setopt($ch, CURLOPT_ENCODING, "");
 
 	$response = curl_exec($ch);
-	$url_amazon = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
+	$url_final = curl_getinfo($ch, CURLINFO_EFFECTIVE_URL);
 	curl_close($ch);
+
+	return $url_final;
+}
+
+function get_ASIN_from_URL($url)
+{
+	$url_amazon = get_final_URL_from_URL($url);
 
 	preg_match('/(?:dp|o|gp|-|dp\/product|gp\/product)\/(B[0-9]{2}[0-9A-Z]{7}|[0-9]{9}(?:X|[0-9]))/', $url_amazon, $asin_arr);
 
@@ -35,15 +44,42 @@ function get_ASIN_from_URL($url)
 	}
 }
 
-function get_image_price_graph($ASIN, $domain = "de")
+function get_image_price_graph($ASIN, $url)
 {
+	$url_final = get_final_URL_from_URL($url);
+	$tld = get_tld_from_url($url_final);
 	if ($ASIN != null) {
-		$url = "https://graph.keepa.com/pricehistory.png?domain=" . $domain . "&asin=" . $ASIN;
+		$url = "https://graph.keepa.com/pricehistory.png?domain=" . $tld . "&asin=" . $ASIN;
 	} else {
 		$url = "";
 	}
 
 	return $url;
+}
+
+function get_tld_from_url($URL)
+{
+	$URL = get_final_URL_from_URL($URL);
+	$urlMap = array('com', 'co.uk', 'de', 'at','es','it','fr');
+
+	$host = "";
+
+	$urlData = parse_url($URL);
+	$hostData = explode('.', $urlData['host']);
+	$hostData = array_reverse($hostData);
+
+	if (array_search($hostData[1] . '.' . $hostData[0], $urlMap) !== FALSE) {
+		$host = $hostData[2] . '.' . $hostData[1] . '.' . $hostData[0];
+	} elseif (array_search($hostData[0], $urlMap) !== FALSE) {
+		$host = $hostData[1] . '.' . $hostData[0];
+	}
+
+	$host = explode(".", $host);
+	echo $host[0]; // amazon
+	echo $host[1]; // de
+
+	return $host[1];
+
 }
 
 function get_threads_by_merchant($merchant_id, $limit = 50, $filter = null)

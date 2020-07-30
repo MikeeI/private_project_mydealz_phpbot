@@ -1,13 +1,14 @@
 {
 	"name":"mikeel/mydealz_phpparserbot",
-	"description": "MyDealz PHP Bot",
+	"description": "MyDealz PHP Bot 2",
 	"version": "0.0.1",
 	"require": {
 		"guzzlehttp/oauth-subscriber": "0.4.*",
 		"ext-json": "*",
 		"ext-curl": "*",
 		"eleirbag89/telegrambotphp": "*",
-		"intervention/image": "*"
+		"intervention/image": "*",
+		"jeremykendall/php-domain-parser": "*"
 	},
 	"autoload": {
 		"classmap": [

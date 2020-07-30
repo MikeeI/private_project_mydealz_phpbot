@@ -47,7 +47,7 @@ foreach ($json->data as $thread) {
 	echo '<td>' . secToHR($date->getTimestamp() - $thread->submitted) . "</td>";
 	echo '<td>' . $thread->thread_id . '</td>';
 	echo '<td>' . $thread->price . '</td>';
-	echo '<td>' . '<img style="width: 250px; max-height: 100px" alt="" src="' . get_image_price_graph($asin) . '">' . '</td>';
+	echo '<td>' . '<img style="width: 250px; max-height: 100px" alt="" src="' . get_image_price_graph($asin,"https://mydealz.de/visit/thread/" . $thread->thread_id) . '">' . '</td>';
 	if (isset($thread->price_discount)) {
 		echo '<td>' . $thread->price_discount . '%</td>';
 	} else {
