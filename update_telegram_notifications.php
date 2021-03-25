@@ -31,6 +31,8 @@ foreach ($json->data as $thread) {
 		}
 	}
 }
+
+/*
 $json = get_threads_by_merchant(385, 50);
 
 foreach ($json->data as $thread) {
@@ -54,6 +56,7 @@ foreach ($json->data as $thread) {
 		}
 	}
 }
+*/
 
 function send_notification($thread)
 {
